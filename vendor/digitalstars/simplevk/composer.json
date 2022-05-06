@@ -1,0 +1,31 @@
+{
+    "name": "digitalstars/simplevk",
+    "description": "Library for easy work with VK com api",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "ZeRoX",
+            "email": "as234zx15@yandex.ru"
+        },
+        {
+            "name": "Runnin",
+            "email": "mr.kirilll12@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-pcntl": "*",
+        "ext-posix": "*",
+        "ext-fileinfo": "*",
+        "ext-iconv": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigitalStars\\SimpleVK\\": "src/"
+        }
+    }
+}
