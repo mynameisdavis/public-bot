@@ -1,18 +1,24 @@
 <?php
-    $connect = mysqli_connect('','','',''); // connect bd
+    $connect = mysqli_connect('db4.myarena.ru','u25384_emerald2022','4R7u1J0x5W','u25384_emerald2022'); // connect bd
 
     require_once __DIR__.'/vendor/digitalstars/simplevk/autoload.php';
     use DigitalStars\SimpleVK\{Bot, SimpleVK as vk};
 
-    $vk = vk::create('', '5.126')->setConfirm('');  // vk api
-    $bot = Bot::create('', '5.126'); // vk api
+    $token = 'f49c268d42807f29cc103a6530f642ff24972e5f8307785c1add136bd7a2f3a05ca6a5fcee44386573f50';
+    $version = '5.126';
+    $confirm = 'e753886a';
+
+    $vk = vk::create($token, $version)->setConfirm($confirm);  // vk api
+    $bot = Bot::create($token, $version); // vk api
     
     $vk->setUserLogError('582127671');
-    $data = $vk->initVars($peer_id, $user_id, $type, $message); //инициализация переменных из события
+    $data = $vk->initVars($peer_id, $user_id, $type, $message);
 
     if(!$connect) {
         $vk->reply('Ошибка подключение к БД'); // check connect bd
     }
+
+
 
     if($type == 'message_new') {
         if($message == '!команды') { // cmd 
@@ -22,6 +28,7 @@
                 - !лидеры
                 - !онлайн
                 - !прокачать {nickname}
+                - !профиль {nickname}
             ');
         }
         if($message == '!админы') { // cmd
@@ -85,17 +92,50 @@
         }
     });
 
-    $bot->preg_cmd('info', '!\!профиль (.*)!')->func(function ($msg, $params) use ($connect){
+    $bot->preg_cmd('info', '!\!профиль (.*)!')->func(function ($msg, $params) use ($connect) {
+
         $account = mysqli_query($connect, "SELECT * FROM `s_users` WHERE `Name` = '$params[1]'");
         $account = mysqli_fetch_array($account);
+
+        $house = mysqli_query($connect, "SELECT * FROM `house` WHERE `hOwner` = '$params[1]'");
+        $house = mysqli_fetch_array($house);
+
+        if($house) {
+            $dom = "
+                Номер дома: $house[hID]
+                Класс: $house[hKlass]";
+        } else {
+            $dom = "Дом: отсуствует";
+        }
+
+        if($house) {
+            
+        }
 
         if($account) {
             $msg->text('
                 🙍‍♂ НикНейм: '.$params[1].'
                 Уровень: '.$account['pLevel'].'
-                Деньги на руках: '.number_format($account['pCash']).'
-                Наркотики: '.number_format($account['pDrug']).'
-                Материаллы: '.number_format($account['pMats']).'
+                
+                💸 Средства              
+                Деньги на руках: '.number_format($account['pCash']).' $
+                На депозите: '.number_format($account['pDeposit']).'
+                В банке: '.number_format($account['pBank']).'
+                Баланс аккаунта: '.number_format($account['u_donate']).'
+                
+                🏛 Недвижимость            
+                '. $dom .'
+                Бизнес:
+                Ферма:
+                Машина:
+                
+                🗿 Остальное
+                Наркотики: '.number_format($account['pDrugs']).' шт
+                Материаллы: '.number_format($account['pMats']).' шт
+                Фишек казино: шт
+                VIP-Статус:
+                Варны: 
+                Реферальный аккаунт:
             ');
         } else {
             $msg->text("‼ Аккаунт не найден");
