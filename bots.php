@@ -1,10 +1,10 @@
 <?php
-    $connect = mysqli_connect('db4.myarena.ru','u25384_emerald2022','4R7u1J0x5W','u25384_emerald2022'); // connect bd
+    $connect = mysqli_connect('db4.myarena.ru','','',''); // connect bd
 
     require_once __DIR__.'/vendor/digitalstars/simplevk/autoload.php';
     use DigitalStars\SimpleVK\{Bot, SimpleVK as vk};
 
-    $token = 'f49c268d42807f29cc103a6530f642ff24972e5f8307785c1add136bd7a2f3a05ca6a5fcee44386573f50';
+    $token = '';
     $version = '5.126';
     $confirm = 'e753886a';
 
