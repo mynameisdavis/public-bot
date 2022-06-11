@@ -11,6 +11,10 @@ class ComposerStaticInit6569d7deabc20aeeb86cacb29ee094b8
         array (
             'DigitalStars\\SimpleVK\\' => 22,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -18,10 +22,30 @@ class ComposerStaticInit6569d7deabc20aeeb86cacb29ee094b8
         array (
             0 => __DIR__ . '/..' . '/digitalstars/simplevk/src',
         ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App',
+        ),
     );
 
     public static $classMap = array (
+        'App\\Controllers\\App' => __DIR__ . '/../..' . '/App/Controllers/App.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'DigitalStars\\SimpleVK\\Auth' => __DIR__ . '/..' . '/digitalstars/simplevk/src/Auth.php',
+        'DigitalStars\\SimpleVK\\BaseConstructor' => __DIR__ . '/..' . '/digitalstars/simplevk/src/BaseConstructor.php',
+        'DigitalStars\\SimpleVK\\Bot' => __DIR__ . '/..' . '/digitalstars/simplevk/src/Bot.php',
+        'DigitalStars\\SimpleVK\\Carousel' => __DIR__ . '/..' . '/digitalstars/simplevk/src/Carousel.php',
+        'DigitalStars\\SimpleVK\\Diagnostics' => __DIR__ . '/..' . '/digitalstars/simplevk/src/Diagnostics.php',
+        'DigitalStars\\SimpleVK\\ErrorHandler' => __DIR__ . '/..' . '/digitalstars/simplevk/src/ErrorHandler.php',
+        'DigitalStars\\SimpleVK\\FileUploader' => __DIR__ . '/..' . '/digitalstars/simplevk/src/FileUploader.php',
+        'DigitalStars\\SimpleVK\\LongPoll' => __DIR__ . '/..' . '/digitalstars/simplevk/src/LongPoll.php',
+        'DigitalStars\\SimpleVK\\Message' => __DIR__ . '/..' . '/digitalstars/simplevk/src/Message.php',
+        'DigitalStars\\SimpleVK\\Post' => __DIR__ . '/..' . '/digitalstars/simplevk/src/Post.php',
+        'DigitalStars\\SimpleVK\\SimpleVK' => __DIR__ . '/..' . '/digitalstars/simplevk/src/SimpleVK.php',
+        'DigitalStars\\SimpleVK\\SimpleVkException' => __DIR__ . '/..' . '/digitalstars/simplevk/src/SimpleVkException.php',
+        'DigitalStars\\SimpleVK\\SiteAuth' => __DIR__ . '/..' . '/digitalstars/simplevk/src/SiteAuth.php',
+        'DigitalStars\\SimpleVK\\Store' => __DIR__ . '/..' . '/digitalstars/simplevk/src/Store.php',
+        'DigitalStars\\SimpleVK\\Streaming' => __DIR__ . '/..' . '/digitalstars/simplevk/src/Streaming.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

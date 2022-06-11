@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6cd5a8e-e6f8-41cf-a440-e9270c95fc28" name="Changes" comment="" />
+    <list default="true" id="d6cd5a8e-e6f8-41cf-a440-e9270c95fc28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/App.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Businesses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Cmd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Fid.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/House.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Leader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Member.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Promocodes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Security.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Servers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Start.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/VkAPi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/vk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bots.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -16,21 +48,43 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/digitalstars/simplevk" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="294fZSIwe5gSxwOhuN2zJ7DxVr1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Норт/Documents/GitHub/public-bot",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary&quot;: &quot;PHPUnit&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\config" />
+      <recent name="C:\xampp\htdocs" />
+      <recent name="C:\xampp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\App\Controllers" />
+      <recent name="C:\xampp\htdocs\App\Controllers\Admin" />
+      <recent name="C:\xampp\htdocs\App" />
+      <recent name="C:\xampp\htdocs" />
+      <recent name="C:\xampp\htdocs\App\Old" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,10 +94,30 @@
       <option name="presentableId" value="Default" />
       <updated>1652377333483</updated>
       <workItem from="1652377336311" duration="12732000" />
+      <workItem from="1654690060961" duration="946000" />
+      <workItem from="1654710437370" duration="2169000" />
+      <workItem from="1654793696001" duration="553000" />
+      <workItem from="1654794291389" duration="11830000" />
+      <workItem from="1654851486227" duration="9034000" />
+      <workItem from="1654863021616" duration="26857000" />
+      <workItem from="1654954572455" duration="2208000" />
+      <workItem from="1654956946340" duration="8897000" />
+      <workItem from="1654978190267" duration="9111000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
